@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body{
+    font-family: "Poppins";
+    min-height: 100vh;
+    width: auto;
+}
+
+nav a {
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #CF995F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+nav a:hover {
+    background-color: #fff;
+    color: rgb(171,97,41);;
+}
+
+.container-card{
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.card{
+    width: 20%;
+    height: 300px;
+    margin: 20px;
+    background: #DBAD6A;
+    box-sizing: border-box;
+    border: black px solid;
+    border-radius: 5%;
+}
+
+.containerde-container-milieu{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 7% 0%;
+    height: 800px;
+    width: 100%;
+}
+
+.container-milieu{
+    display: flex;
+    height: 80%;
+    width: 90%;
+    background-color: #DBAD6A;
+}
+
+
+@media screen and (max-width:1200px){
+    .card{
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width:613px){
+    .card{
+        width: 90%;
+    }
+    .logo{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:572px){
+    .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .card{
+        width: 90%;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    nav a{
+        font-size: 12px;
+    }
+}
