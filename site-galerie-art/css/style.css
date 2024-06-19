@@ -1292,38 +1292,6 @@ footer {
     width: 40%; /* The width is the width of the web page */
 }
 
-#container-map{
-	margin: 10% 0;
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
-}
-
-#attribute{
-	font-weight: bolder;
-	color: black;
-}
-
-@media screen and (max-width:588px) {
-	.container{
-		flex-direction: column;
-		width: 75%;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	.image{
-		margin-right: 0;
-		max-width: 60%;
-	}
-	.text{
-		max-width: 80%;
-	}
-	.op{
-		padding-top: 15%;
-		font-size: 15px;
-	}
-}
 
 .container-hor{
 	display: flex;
@@ -1344,4 +1312,121 @@ footer {
 
 .img-fr{
 	width: 50%;
+}
+
+.text-container-box{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: whitesmoke;
+}
+
+.text-container-box > p{
+	color: black;
+	padding: 10px;
+	height: 90%;
+	width: 90%;
+}
+
+.text-container-box:hover{
+	transform: translateX(10px);
+}
+
+.realisateurs{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.notre-équipe{
+	padding: 0px 0px 100px 0px;
+	text-decoration: underline;
+}
+
+.cartes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5%;
+	width: 100%;
+	height: auto;
+}
+
+.card{
+	text-align: center;
+	width: 15%;
+	border: 1px solid black;
+	box-shadow: 2px 4px 2px #22222231;
+}
+
+.noir{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	background-color: black;
+	padding: 2px;
+}
+
+h5{
+	padding: 10px;
+	color: white;
+}
+
+.space{
+	height: 40%;
+}
+
+.pp{
+}
+
+#container-map{
+	margin: 10% 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}http://127.0.0.1:5500/site-galerie-art/img/%C3%A9quipe/Lucas.jpeg
+
+#attribute{
+	font-weight: bolder;
+	color: black;
+}
+
+@media screen and (max-width:588px) {
+	.container{
+		flex-direction: column;
+		width: 75%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	footer{
+		display: none;
+	}
+
+	.image{
+		margin-right: 0;
+		max-width: 60%;
+	}
+	.text{
+		max-width: 80%;
+	}
+	.op{
+		padding-top: 15%;
+		font-size: 15px;
+	}
+	.cartes{
+		width: 50%;
+		gap: 100px;
+		flex-direction: column;
+	}
+	.card{
+		width: 100%;
+	}
+
 }
